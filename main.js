@@ -1,14 +1,15 @@
 var numOfClicks = 0;
-var hedding = document.createElement("h1")
-var para = document.createElement("p");
+const hedding = document.createElement("h1")
+const para = document.createElement("p");
+const facts = ["stuff", "more stuff","cool stuff","hi","bye","ha ha","boo!","yes","no","why?","needles :("]
 
 randomBtm.addEventListener("click", function(e){
   numOfClicks += 1
   if (numOfClicks==1) {
     para.innerText = "This is a paragraph";
   } else {
-
-    fact1()
+    para.innerText = facts [Math.round(Math.random(0)*10)]
+    
   };
   
   
