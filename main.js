@@ -8,7 +8,7 @@ randomBtm.addEventListener("click", function(e){
   if (numOfClicks==1) {
     para.innerText = "This is a paragraph";
   } else {
-    para.innerText = facts [Math.round(Math.random(0)*10)]
+    para.innerText = facts [randomNum(0,facts[length])]
     
   };
   
@@ -20,9 +20,6 @@ randomBtm.addEventListener("click", function(e){
   document.body.appendChild(para);
 });
 
-
-
-function fact1(){
-  para.innerText = "Have you ever wondered why time measurement for almost all of the world is in base 60, instead of base 10 like basically everything else?";
-  hedding.innerText = "Why is the time we use base 60?"
+function randomNum(min,max){
+  ((Math.random(0)*(max-1))+min)
 };
