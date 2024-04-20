@@ -6,11 +6,21 @@ const facts = ["A while ago, people invented washing machines that use WiFi. Why
 ,"Have you ever wondered why time measurement for almost all of the world is in base 60, instead of base 10 like basically everything else? The clock we use dates back to"];
 const hFacts = ["Why AI will destroy your washing machines"
 , "Why is the time we use in base 60?"];
+var factsSeen=[]
 randomBtm.addEventListener("click", function(e){
   numOfClicks += 1
-  randomNum = Math.round(((Math.random(0)*(facts.length-1))))
+  randomNum = Math.round(((Math.random(0)*(facts.length-1))));
+  if (factsSeen.length==facts.length){
+    factsSeen = [];
+    console.log("list was emptied!")
+  };
+
+  while (factsSeen.includes(randomNum)){
+    randomNum = Math.round(((Math.random(0)*(facts.length-1))));
+  };
+  factsSeen.push(randomNum);
   he.innerText = hFacts [randomNum];
-  para.innerText = facts [randomNum]
+  para.innerText = facts [randomNum];
   //para.innerText="hello"
   console.log("I was clicked!!");
   document.body.appendChild(he);
