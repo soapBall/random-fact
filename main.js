@@ -10,7 +10,7 @@ var factsSeen=[]
 randomBtm.addEventListener("click", function(e){
   numOfClicks += 1
   randomNum = Math.round(((Math.random(0)*(facts.length-1))));
-  if (factsSeen.length==facts.length){
+  if (factsSeen.length>=facts.length){
     factsSeen = [];
     console.log("list was emptied!")
   };
