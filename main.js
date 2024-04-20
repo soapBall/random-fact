@@ -1,25 +1,19 @@
 var numOfClicks = 0;
-const heading = document.createElement("h1")
+var random = 0
+const he = document.createElement("h1");
 const para = document.createElement("p");
-const facts = ["stuff", "more stuff","cool stuff","hi","bye","ha ha","boo!","yes","no","why?","needles :("]
-
+const facts = ["A while ago, people invented washing machines that use WiFi. Why, no one knows. But these could destroy the world because of AI. What if someone made a true AI, an AI that could have its own ideas? That AI, if it had bad intentions, could hypothetically hack into the internet, control the washing machines, and flood full houses! Meanwhile, another AI that went into the internet and took over one of those washing machine maker robots could make millions of more WiFi washing machines and convince everyone that they are the best washing machines. The world would be destroyed!"
+,"Have you ever wondered why time measurement for almost all of the world is in base 60, instead of base 10 like basically everything else? The clock we use dates back to"];
+const hFacts = ["Why AI will destroy your washing machines"
+, "Why is the time we use in base 60?"];
 randomBtm.addEventListener("click", function(e){
   numOfClicks += 1
-  if (numOfClicks==1) {
-    para.innerText = "This is a paragraph";
-  } else {
-    para.innerText = facts [Math.round(((Math.random(0)*(facts.length-1))))];
-    console.log(randomnum(1,5))
-  };
-  
-  
+  randomNum = Math.round(((Math.random(0)*(facts.length-1))))
+  he.innerText = hFacts [randomNum];
+  para.innerText = facts [randomNum]
+  //para.innerText="hello"
   console.log("I was clicked!!");
-
-  
-
+  document.body.appendChild(he);
   document.body.appendChild(para);
+
 });
- 
-function randomnum(max, min){
-  
-};
