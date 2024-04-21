@@ -16,48 +16,65 @@
 
 </head>
 <style>
+  body{
+    background-color: #FFBD59;
+  }
   h1{
     font-family: "Permanent Marker", cursive;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
   font-size: 40px;
+  color: rgb(50,50,0);
   }
   p{
     font-family: "Indie Flower", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 30px;
+  color: rgb(50,50,0);
   }
   button{
     font-family: "Indie Flower", cursive;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 20px;
-  background-color: blue;
+  font-size: 40px;
+  background-color: rgb(41, 41, 77);
   color: beige;
   border: none;
-  height: 50px;
-  width: 100px;
+  height: 75px;
+  width: 150px;
   border-radius: 10px;
   margin:0 auto;
   display: block;
   margin: 0 auto;
   cursor: pointer;
-
-  }
-  button:hover{
-    background-color: aqua;
   }
   
+  .centered{
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  button:hover{
+    background-color: rgb(50,50,0);
+    
+  }
+  img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+  }
 </style>
 <body>
-    <h1>
-      Random Facts
+    <h1 type="xxl">
+      Random Facts.com
     </h1>
-    <p>
+    <img src="randomFacts.png">
+    <p class="centered">
       Click the button for a completely useless random fact!
     </p>
     <button id = "randomBtm">Click Me!</button>
